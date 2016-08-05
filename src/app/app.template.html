@@ -1,7 +1,25 @@
-<div class="app">
+<div class="app">  
+  
+  <div class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">FS2.0</a>
+      <ul class="nav navbar-nav">
+        <li class="">
+          <a ui-sref="login">Login</a>
+        </li>
+        <li class="">
+          <a ui-sref="app.home">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-  {{ $ctrl.testVal }}
+  <div class="container">
+    
+    <h1>App template</h1>
 
-  <div>app template</div>
+  </div>
 
-</div>
+  <div ui-view></div>
+  
+</div>  
