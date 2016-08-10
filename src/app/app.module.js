@@ -1,15 +1,20 @@
 import appComponent from './app.component';
 import uiRouter from 'angular-ui-router';  
 
+import components from './components';
+import services from './services';
+
 const app = angular.module('app', [
-  uiRouter
+  uiRouter,
+  components.name,
+  services.name
 ])
   .config(($stateProvider, $urlRouterProvider) => {
     
     "ngInject";
 
     $stateProvider
-      .state('login', {
+      .state('app.login', {
         url: "/login",
         template: `<login></login>`
       })
@@ -28,13 +33,6 @@ const app = angular.module('app', [
   })
 
   .component('app', appComponent)
-  .component('login', {
-    template: `
-      <div class="login">
-        <h2>login form</h2>
-      </div>
-    `
-  })
   .component('home', {
     template: `
       <div class="home">

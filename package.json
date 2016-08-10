@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --inline --hot --config "
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot --config ",
+    "server": "nodemon ./"
   },
   "keywords": [],
   "author": "",
@@ -13,13 +14,24 @@
     "babel-core": "^6.13.1",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.1",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
     "ng-annotate-loader": "^0.1.1",
+    "node-sass": "^3.8.0",
     "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "angular": "^1.5.8",
-    "angular-ui-router": "^0.3.1"
+    "angular-ui-router": "^0.3.1",
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0"
   }
 }
