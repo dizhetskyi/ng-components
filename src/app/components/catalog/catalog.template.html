@@ -1,0 +1,13 @@
+<div class="catalog">
+  
+  <div ng-if="$ctrl.ProductService.fetching">Loading</div>
+
+  <div ng-if="$ctrl.ProductService.error !== false">
+    Error: {{$ctrl.ProductService.error.statusText}}
+  </div>
+
+  <div ng-if="!$ctrl.ProductService.fetching && !$ctrl.ProductService.error">
+    <catalog-products items="$ctrl.ProductService.items"></catalog-products>
+  </div>
+
+</div>

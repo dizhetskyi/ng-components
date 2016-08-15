@@ -27,6 +27,10 @@ const app = angular.module('app', [
         url: "/home",
         template: "<home></home>"
       })
+      .state('app.catalog', {
+        url: "/catalog",
+        template: `<catalog></catalog>`
+      })
 
     $urlRouterProvider.otherwise('/app/home');
 

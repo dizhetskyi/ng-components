@@ -1,5 +1,5 @@
 {
-  "category": [
+  "categories":[
     {
       "id": 1,
       "name": "Computers"
@@ -25,706 +25,606 @@
       "name": "Outdoors"
     }
   ],
-  "product": [
+  "products": [
     {
       "id": 1,
-      "category": 2,
+      "categoryId":2,
       "name": "Fantastic Metal Pizza",
-      "price": "373.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "373.00"
     },
     {
       "id": 2,
-      "category": 2,
+      "categoryId":2,
       "name": "Ergonomic Concrete Tuna",
-      "price": "771.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "771.00"
     },
     {
       "id": 3,
-      "category": 5,
+      "categoryId":5,
       "name": "Awesome Wooden Computer",
-      "price": "565.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "565.00"
     },
     {
       "id": 4,
-      "category": 1,
+      "categoryId":1,
       "name": "Intelligent Frozen Hat",
-      "price": "767.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "767.00"
     },
     {
       "id": 5,
-      "category": 6,
+      "categoryId":6,
       "name": "Licensed Metal Bike",
-      "price": "314.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "314.00"
     },
     {
       "id": 6,
-      "category": 4,
+      "categoryId":4,
       "name": "Unbranded Fresh Bike",
-      "price": "467.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "467.00"
     },
     {
       "id": 7,
-      "category": 6,
+      "categoryId":6,
       "name": "Handcrafted Cotton Shoes",
-      "price": "956.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "956.00"
     },
     {
       "id": 8,
-      "category": 1,
+      "categoryId":1,
       "name": "Handcrafted Metal Fish",
-      "price": "965.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "965.00"
     },
     {
       "id": 9,
-      "category": 6,
+      "categoryId":6,
       "name": "Tasty Soft Bike",
-      "price": "9.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "9.00"
     },
     {
       "id": 10,
-      "category": 2,
+      "categoryId":2,
       "name": "Incredible Soft Sausages",
-      "price": "41.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "41.00"
     },
     {
       "id": 11,
-      "category": 6,
+      "categoryId":6,
       "name": "Handmade Concrete Ball",
-      "price": "808.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "808.00"
     },
     {
       "id": 12,
-      "category": 4,
+      "categoryId":4,
       "name": "Tasty Soft Sausages",
-      "price": "256.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "256.00"
     },
     {
       "id": 13,
-      "category": 3,
+      "categoryId":3,
       "name": "Gorgeous Plastic Chips",
-      "price": "913.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "913.00"
     },
     {
       "id": 14,
-      "category": 1,
+      "categoryId":1,
       "name": "Practical Soft Pizza",
-      "price": "954.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "954.00"
     },
     {
       "id": 15,
-      "category": 5,
+      "categoryId":5,
       "name": "Tasty Cotton Pizza",
-      "price": "198.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "198.00"
     },
     {
       "id": 16,
-      "category": 5,
+      "categoryId":5,
       "name": "Handcrafted Fresh Cheese",
-      "price": "855.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "855.00"
     },
     {
       "id": 17,
-      "category": 4,
+      "categoryId":4,
       "name": "Rustic Granite Sausages",
-      "price": "858.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "858.00"
     },
     {
       "id": 18,
-      "category": 6,
+      "categoryId":6,
       "name": "Refined Steel Shirt",
-      "price": "38.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "38.00"
     },
     {
       "id": 19,
-      "category": 4,
+      "categoryId":4,
       "name": "Generic Fresh Chair",
-      "price": "772.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "772.00"
     },
     {
       "id": 20,
-      "category": 4,
+      "categoryId":4,
       "name": "Handmade Frozen Chair",
-      "price": "266.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "266.00"
     },
     {
       "id": 21,
-      "category": 6,
+      "categoryId":6,
       "name": "Refined Plastic Computer",
-      "price": "769.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "769.00"
     },
     {
       "id": 22,
-      "category": 4,
+      "categoryId":4,
       "name": "Refined Rubber Keyboard",
-      "price": "933.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "933.00"
     },
     {
       "id": 23,
-      "category": 6,
+      "categoryId":6,
       "name": "Fantastic Soft Soap",
-      "price": "89.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "89.00"
     },
     {
       "id": 24,
-      "category": 1,
+      "categoryId":1,
       "name": "Licensed Steel Mouse",
-      "price": "59.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "59.00"
     },
     {
       "id": 25,
-      "category": 5,
+      "categoryId":5,
       "name": "Unbranded Frozen Shoes",
-      "price": "626.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "626.00"
     },
     {
       "id": 26,
-      "category": 2,
+      "categoryId":2,
       "name": "Incredible Wooden Fish",
-      "price": "405.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "405.00"
     },
     {
       "id": 27,
-      "category": 3,
+      "categoryId":3,
       "name": "Fantastic Wooden Fish",
-      "price": "372.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "372.00"
     },
     {
       "id": 28,
-      "category": 4,
+      "categoryId":4,
       "name": "Intelligent Steel Ball",
-      "price": "967.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "967.00"
     },
     {
       "id": 29,
-      "category": 1,
+      "categoryId":1,
       "name": "Fantastic Wooden Pants",
-      "price": "984.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "984.00"
     },
     {
       "id": 30,
-      "category": 1,
+      "categoryId":1,
       "name": "Handmade Plastic Keyboard",
-      "price": "459.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "459.00"
     },
     {
       "id": 31,
-      "category": 1,
+      "categoryId":1,
       "name": "Fantastic Fresh Car",
-      "price": "356.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "356.00"
     },
     {
       "id": 32,
-      "category": 5,
+      "categoryId":5,
       "name": "Incredible Granite Table",
-      "price": "262.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "262.00"
     },
     {
       "id": 33,
-      "category": 2,
+      "categoryId":2,
       "name": "Rustic Cotton Mouse",
-      "price": "596.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "596.00"
     },
     {
       "id": 34,
-      "category": 4,
+      "categoryId":4,
       "name": "Gorgeous Metal Shoes",
-      "price": "423.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "423.00"
     },
     {
       "id": 35,
-      "category": 3,
+      "categoryId":3,
       "name": "Intelligent Concrete Car",
-      "price": "826.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "826.00"
     },
     {
       "id": 36,
-      "category": 1,
+      "categoryId":1,
       "name": "Rustic Frozen Sausages",
-      "price": "755.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "755.00"
     },
     {
       "id": 37,
-      "category": 3,
+      "categoryId":3,
       "name": "Licensed Frozen Shoes",
-      "price": "376.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "376.00"
     },
     {
       "id": 38,
-      "category": 2,
+      "categoryId":2,
       "name": "Incredible Cotton Chicken",
-      "price": "158.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "158.00"
     },
     {
       "id": 39,
-      "category": 2,
+      "categoryId":2,
       "name": "Licensed Plastic Shirt",
-      "price": "470.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "470.00"
     },
     {
       "id": 40,
-      "category": 1,
+      "categoryId":1,
       "name": "Rustic Steel Tuna",
-      "price": "955.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "955.00"
     },
     {
       "id": 41,
-      "category": 3,
+      "categoryId":3,
       "name": "Intelligent Fresh Car",
-      "price": "670.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "670.00"
     },
     {
       "id": 42,
-      "category": 4,
+      "categoryId":4,
       "name": "Sleek Plastic Ball",
-      "price": "915.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "915.00"
     },
     {
       "id": 43,
-      "category": 4,
+      "categoryId":4,
       "name": "Handcrafted Rubber Computer",
-      "price": "829.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "829.00"
     },
     {
       "id": 44,
-      "category": 3,
+      "categoryId":3,
       "name": "Licensed Granite Cheese",
-      "price": "336.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "336.00"
     },
     {
       "id": 45,
-      "category": 5,
+      "categoryId":5,
       "name": "Fantastic Plastic Cheese",
-      "price": "676.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "676.00"
     },
     {
       "id": 46,
-      "category": 2,
+      "categoryId":2,
       "name": "Ergonomic Concrete Pizza",
-      "price": "419.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "419.00"
     },
     {
       "id": 47,
-      "category": 1,
+      "categoryId":1,
       "name": "Sleek Fresh Keyboard",
-      "price": "317.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "317.00"
     },
     {
       "id": 48,
-      "category": 1,
+      "categoryId":1,
       "name": "Sleek Fresh Tuna",
-      "price": "80.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "80.00"
     },
     {
       "id": 49,
-      "category": 4,
+      "categoryId":4,
       "name": "Gorgeous Metal Mouse",
-      "price": "690.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "690.00"
     },
     {
       "id": 50,
-      "category": 1,
+      "categoryId":1,
       "name": "Generic Wooden Tuna",
-      "price": "745.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "745.00"
     },
     {
       "id": 51,
-      "category": 5,
+      "categoryId":5,
       "name": "Gorgeous Metal Salad",
-      "price": "867.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "867.00"
     },
     {
       "id": 52,
-      "category": 5,
+      "categoryId":5,
       "name": "Intelligent Granite Shirt",
-      "price": "287.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "287.00"
     },
     {
       "id": 53,
-      "category": 6,
+      "categoryId":6,
       "name": "Gorgeous Plastic Chicken",
-      "price": "75.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "75.00"
     },
     {
       "id": 54,
-      "category": 4,
+      "categoryId":4,
       "name": "Awesome Frozen Table",
-      "price": "766.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "766.00"
     },
     {
       "id": 55,
-      "category": 3,
+      "categoryId":3,
       "name": "Ergonomic Frozen Sausages",
-      "price": "504.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "504.00"
     },
     {
       "id": 56,
-      "category": 3,
+      "categoryId":3,
       "name": "Fantastic Plastic Shirt",
-      "price": "743.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "743.00"
     },
     {
       "id": 57,
-      "category": 3,
+      "categoryId":3,
       "name": "Sleek Frozen Computer",
-      "price": "87.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "87.00"
     },
     {
       "id": 58,
-      "category": 4,
+      "categoryId":4,
       "name": "Incredible Soft Hat",
-      "price": "747.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "747.00"
     },
     {
       "id": 59,
-      "category": 3,
+      "categoryId":3,
       "name": "Handcrafted Cotton Pants",
-      "price": "623.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "623.00"
     },
     {
       "id": 60,
-      "category": 4,
+      "categoryId":4,
       "name": "Practical Frozen Ball",
-      "price": "488.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "488.00"
     },
     {
       "id": 61,
-      "category": 5,
+      "categoryId":5,
       "name": "Unbranded Frozen Shoes",
-      "price": "763.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "763.00"
     },
     {
       "id": 62,
-      "category": 2,
+      "categoryId":2,
       "name": "Generic Wooden Towels",
-      "price": "513.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "513.00"
     },
     {
       "id": 63,
-      "category": 1,
+      "categoryId":1,
       "name": "Small Rubber Soap",
-      "price": "632.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "632.00"
     },
     {
       "id": 64,
-      "category": 1,
+      "categoryId":1,
       "name": "Unbranded Metal Chips",
-      "price": "126.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "126.00"
     },
     {
       "id": 65,
-      "category": 6,
+      "categoryId":6,
       "name": "Unbranded Plastic Sausages",
-      "price": "373.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "373.00"
     },
     {
       "id": 66,
-      "category": 6,
+      "categoryId":6,
       "name": "Unbranded Wooden Bike",
-      "price": "562.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "562.00"
     },
     {
       "id": 67,
-      "category": 6,
+      "categoryId":6,
       "name": "Fantastic Wooden Keyboard",
-      "price": "700.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "700.00"
     },
     {
       "id": 68,
-      "category": 3,
+      "categoryId":3,
       "name": "Gorgeous Concrete Bike",
-      "price": "215.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "215.00"
     },
     {
       "id": 69,
-      "category": 2,
+      "categoryId":2,
       "name": "Refined Steel Bacon",
-      "price": "181.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "181.00"
     },
     {
       "id": 70,
-      "category": 4,
+      "categoryId":4,
       "name": "Fantastic Granite Bike",
-      "price": "780.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "780.00"
     },
     {
       "id": 71,
-      "category": 6,
+      "categoryId":6,
       "name": "Tasty Wooden Computer",
-      "price": "148.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "148.00"
     },
     {
       "id": 72,
-      "category": 4,
+      "categoryId":4,
       "name": "Intelligent Granite Fish",
-      "price": "861.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "861.00"
     },
     {
       "id": 73,
-      "category": 3,
+      "categoryId":3,
       "name": "Ergonomic Rubber Salad",
-      "price": "659.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "659.00"
     },
     {
       "id": 74,
-      "category": 6,
+      "categoryId":6,
       "name": "Sleek Concrete Cheese",
-      "price": "1000.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "1000.00"
     },
     {
       "id": 75,
-      "category": 4,
+      "categoryId":4,
       "name": "Rustic Concrete Bacon",
-      "price": "808.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "808.00"
     },
     {
       "id": 76,
-      "category": 6,
+      "categoryId":6,
       "name": "Intelligent Frozen Hat",
-      "price": "252.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "252.00"
     },
     {
       "id": 77,
-      "category": 1,
+      "categoryId":1,
       "name": "Licensed Concrete Chicken",
-      "price": "855.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "855.00"
     },
     {
       "id": 78,
-      "category": 1,
+      "categoryId":1,
       "name": "Rustic Metal Shirt",
-      "price": "501.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "501.00"
     },
     {
       "id": 79,
-      "category": 1,
+      "categoryId":1,
       "name": "Small Metal Shirt",
-      "price": "32.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "32.00"
     },
     {
       "id": 80,
-      "category": 3,
+      "categoryId":3,
       "name": "Licensed Plastic Table",
-      "price": "239.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "239.00"
     },
     {
       "id": 81,
-      "category": 5,
+      "categoryId":5,
       "name": "Small Granite Cheese",
-      "price": "407.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "407.00"
     },
     {
       "id": 82,
-      "category": 3,
+      "categoryId":3,
       "name": "Handcrafted Plastic Pizza",
-      "price": "161.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "161.00"
     },
     {
       "id": 83,
-      "category": 1,
+      "categoryId":1,
       "name": "Sleek Fresh Fish",
-      "price": "881.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "881.00"
     },
     {
       "id": 84,
-      "category": 5,
+      "categoryId":5,
       "name": "Generic Steel Shirt",
-      "price": "130.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "130.00"
     },
     {
       "id": 85,
-      "category": 4,
+      "categoryId":4,
       "name": "Handcrafted Rubber Ball",
-      "price": "163.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "163.00"
     },
     {
       "id": 86,
-      "category": 3,
+      "categoryId":3,
       "name": "Intelligent Concrete Sausages",
-      "price": "348.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "348.00"
     },
     {
       "id": 87,
-      "category": 4,
+      "categoryId":4,
       "name": "Practical Concrete Gloves",
-      "price": "550.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "550.00"
     },
     {
       "id": 88,
-      "category": 3,
+      "categoryId":3,
       "name": "Awesome Soft Pizza",
-      "price": "409.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "409.00"
     },
     {
       "id": 89,
-      "category": 2,
+      "categoryId":2,
       "name": "Unbranded Frozen Sausages",
-      "price": "254.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "254.00"
     },
     {
       "id": 90,
-      "category": 3,
+      "categoryId":3,
       "name": "Fantastic Frozen Bike",
-      "price": "180.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "180.00"
     },
     {
       "id": 91,
-      "category": 6,
+      "categoryId":6,
       "name": "Handmade Metal Bike",
-      "price": "163.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "163.00"
     },
     {
       "id": 92,
-      "category": 5,
+      "categoryId":5,
       "name": "Intelligent Concrete Gloves",
-      "price": "554.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "554.00"
     },
     {
       "id": 93,
-      "category": 1,
+      "categoryId":1,
       "name": "Incredible Granite Hat",
-      "price": "479.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "479.00"
     },
     {
       "id": 94,
-      "category": 5,
+      "categoryId":5,
       "name": "Generic Fresh Pants",
-      "price": "413.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "413.00"
     },
     {
       "id": 95,
-      "category": 1,
+      "categoryId":1,
       "name": "Rustic Metal Towels",
-      "price": "822.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "822.00"
     },
     {
       "id": 96,
-      "category": 2,
+      "categoryId":2,
       "name": "Ergonomic Steel Computer",
-      "price": "858.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "858.00"
     },
     {
       "id": 97,
-      "category": 1,
+      "categoryId":1,
       "name": "Fantastic Cotton Salad",
-      "price": "625.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "625.00"
     },
     {
       "id": 98,
-      "category": 6,
+      "categoryId":6,
       "name": "Handmade Frozen Chair",
-      "price": "164.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "164.00"
     },
     {
       "id": 99,
-      "category": 6,
+      "categoryId":6,
       "name": "Handmade Cotton Table",
-      "price": "417.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "417.00"
     },
     {
       "id": 100,
-      "category": 3,
+      "categoryId":3,
       "name": "Generic Fresh Fish",
-      "price": "606.00",
-      "img": "http://lorempixel.com/640/480/food"
+      "price": "606.00"
     }
   ]
 }
