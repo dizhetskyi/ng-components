@@ -1,4 +1,7 @@
 export default class AppController {
-  constructor(){
+  constructor(AuthService){
+    "ngAnnotate";
+
+    this.AuthService = AuthService;
   }
 }
