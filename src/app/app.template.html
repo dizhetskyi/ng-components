@@ -24,6 +24,35 @@
   </nav>
   
   <div class="container">
+  
+    <div class="well">
+      <div ng-repeat="item in $ctrl.cartItems track by $index">
+
+        {{item.product.name}}: {{item.amount}} x {{item.product.price}} = {{item.amount*item.product.price}}
+
+        &nbsp;
+        <a href="" ng-click="$ctrl.CartService.inc(item.product.id)" style="color: green"><i class="fa fa-plus"></i></a>
+
+        &nbsp;
+
+        <a href="" ng-click="$ctrl.CartService.dec(item.product.id)" style="color: orange"><i class="fa fa-minus"></i></a>
+
+
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        
+        <a href="" ng-click="$ctrl.removeFromCart(item.product.id)" style="color: red"><i class="fa fa-remove"></i></a>
+      </div>
+
+        <br>
+
+        <br>
+
+      Total price:{{$ctrl.CartService.total}}
+    </div>
+
     <categories-nav></categories-nav>
   </div>
 
