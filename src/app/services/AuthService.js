@@ -10,7 +10,7 @@ export default class AuthService {
   }
 
   constructor($http){
-    "ngAnnotate";
+    "ngInject";
 
     this.$http = $http;
     

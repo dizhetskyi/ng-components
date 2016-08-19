@@ -1,7 +1,7 @@
 export default class LoginController {
 
   constructor(AuthService){
-    "ngAnnotate";
+    "ngInject";
 
     this.AuthService = AuthService;
 

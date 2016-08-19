@@ -14,16 +14,18 @@
 
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         
-        <ul class="nav navbar-nav">
-          <li><a ui-sref="app.home">Home</a></li>
-          <li><a ui-sref="app.catalog">Catalog</a></li>
-          <li ng-if="!$ctrl.AuthService.isLoggedIn()"><a ui-sref="app.login">Login</a></li>
+        <ul class="nav navbar-nav pull-right">
+          <li ng-if="!$ctrl.AuthService.isLoggedIn()"><a ui-sref="login">Login</a></li>
         </ul>
 
       </div>
 
     </div>
   </nav>
+  
+  <div class="container">
+    <categories-nav></categories-nav>
+  </div>
 
   <div ui-view></div>
 

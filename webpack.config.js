@@ -9,6 +9,11 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/'
   },
+  resolve: {
+    alias: {
+      'app': path.resolve(__dirname + '/src/app')
+    }
+  },
   module: {
     loaders: [
       {

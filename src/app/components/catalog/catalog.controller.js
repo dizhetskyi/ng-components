@@ -1,9 +1,16 @@
 export default class CatalogController {
-  constructor(ProductService){
-    "ngAnnotate";
+  products = [];
 
-    this.ProductService = ProductService;
+  constructor(ProductsService, $state){
+    "ngInject";
 
-    this.ProductService.fetchProducts();
+    Object.assign(this, {ProductsService, $state})
+  }
+
+  $onInit(){
+    this.ProductsService.getProducts(this.$state.params.categoryId)
+      .then(products => {
+        this.products = products;
+      })
   }
 }

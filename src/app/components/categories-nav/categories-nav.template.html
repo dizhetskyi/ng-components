@@ -1,0 +1,5 @@
+<ul class="nav nav-pills">
+  <li ng-repeat="category in $ctrl.categories" ng-class="{active: $ctrl.activeCategory == category.id}">
+    <a ui-sref="app.catalog.category({categoryId: category.id})">{{category.name}}</a>
+  </li>
+</ul>

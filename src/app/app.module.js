@@ -1,11 +1,15 @@
 import appComponent from './app.component';
 import uiRouter from 'angular-ui-router';  
+import 'angular-ui-router/release/stateEvents';
 
 import components from './components';
 import services from './services';
 
+
+
 const app = angular.module('app', [
   uiRouter,
+  'ui.router.state.events',
   components.name,
   services.name
 ])
@@ -14,22 +18,31 @@ const app = angular.module('app', [
     "ngInject";
 
     $stateProvider
-      .state('app.login', {
-        url: "/login",
-        template: `<login></login>`
-      })
       .state('app', {
         url: "/app",
         abstract: true,
-        template: `<app></app>`
+        component: `app`
       })
       .state('app.home', {
         url: "/home",
-        template: "<home></home>"
+        component: `home`
       })
       .state('app.catalog', {
         url: "/catalog",
-        template: `<catalog></catalog>`
+        component: `catalog`
+      })
+      .state('app.catalog.category', {
+        url: "/{categoryId}",
+        component: 'catalogProducts',
+        resolve: {
+          items: function(ProductsService, $stateParams) {
+            return ProductsService.getProducts($stateParams.categoryId)
+          }
+        }
+      })
+      .state('login', {
+        url: "/login",
+        component: `login`
       })
 
     $urlRouterProvider.otherwise('/app/home');
