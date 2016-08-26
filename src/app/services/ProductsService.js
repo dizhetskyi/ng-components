@@ -20,6 +20,11 @@ class ProductsService {
         this.error = err;
       })
   }
+
+  getOne(pId){
+    return this.$http.get(`http://localhost:3000/products/${pId}`)
+      .then(({data}) => data);      
+  }
 }
 
 export default ProductsService;

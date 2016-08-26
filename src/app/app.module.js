@@ -1,17 +1,18 @@
 import appComponent from './app.component';
 import uiRouter from 'angular-ui-router';  
 import 'angular-ui-router/release/stateEvents';
+import modal from 'angular-ui-bootstrap/src/modal';
 
 import components from './components';
 import services from './services';
-
 
 
 const app = angular.module('app', [
   uiRouter,
   'ui.router.state.events',
   components.name,
-  services.name
+  services.name,
+  modal
 ])
   .config(($stateProvider, $urlRouterProvider) => {
     
@@ -40,6 +41,29 @@ const app = angular.module('app', [
           }
         }
       })
+
+      .state('app.catalog.category.product', {
+        url: "/{productId}",
+        onEnter: ['$uibModal', '$state', '$stateParams', 
+          function($uibModal, $state, $stateParams) {
+
+            var $modal = $uibModal.open({
+              component: 'productView',
+              resolve: {
+                product: ['ProductsService', function(ProductsService){
+                  return ProductsService.getOne($stateParams.productId);
+                }]
+              }
+            });
+            
+            $modal.result.then(null, () => $state.go('^'));
+
+            this.onExit = function() {
+              $modal.close();
+            }
+        }]
+      })
+
       .state('login', {
         url: "/login",
         component: `login`

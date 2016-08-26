@@ -1,5 +1,7 @@
 <div class="catalog-item">
-  <b>Name</b>: {{$ctrl.item.name}} <br>
+  <b>Name</b>: <a ui-sref="app.catalog.category.product({
+    productId: $ctrl.item.id
+  })">{{$ctrl.item.name}}</a> <br>
   <b>Price</b>: {{$ctrl.item.price}} <br>
   <b>Category</b>: {{$ctrl.item.categoryId}} <br>
   <br>
