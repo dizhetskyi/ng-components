@@ -51,4 +51,9 @@ export default class CartService {
     return this.items.reduce((acc, curr) => acc + curr.product.price * curr.amount, 0)
   }
 
+  empty(){
+    this.items = [];
+    this.save();
+  }
+
 }

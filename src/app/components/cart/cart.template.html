@@ -1,0 +1,22 @@
+<div ng-if="$ctrl.CartService.items.length > 0">
+    
+  <div class="well cart">
+
+    <cart-item 
+      ng-repeat="item in $ctrl.CartService.items track by $index" 
+      item="item"
+    >
+    </cart-item>
+  
+    <br>
+    <br>
+
+    Total price:{{$ctrl.CartService.total}}
+
+    <br>
+
+    <a href="" class="btn btn-danger" ng-click="$ctrl.CartService.empty();">Clear</a>
+
+  </div>
+
+</div>

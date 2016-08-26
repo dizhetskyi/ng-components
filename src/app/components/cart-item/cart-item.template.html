@@ -1,0 +1,16 @@
+{{$ctrl.item.product.name}}: {{$ctrl.item.amount}} x {{$ctrl.item.product.price}} = {{$ctrl.item.amount*$ctrl.item.product.price}}
+
+&nbsp;
+<a href="" ng-click="$ctrl.CartService.inc($ctrl.item.product.id)" style="color: green"><i class="fa fa-plus"></i></a>
+
+&nbsp;
+
+<a href="" ng-click="$ctrl.CartService.dec($ctrl.item.product.id)" style="color: orange"><i class="fa fa-minus"></i></a>
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+<a href="" ng-click="$ctrl.CartService.remove($ctrl.item.product.id)" style="color: red"><i class="fa fa-remove"></i></a>
