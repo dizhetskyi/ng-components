@@ -3,6 +3,7 @@ import categoriesNav from './categories-nav/categories-nav.component';
 import catalog from './catalog/catalog.component';
 import catalogProducts from './catalog-products/catalog-products.component';
 import catalogItem from './catalog-item/catalog-item.component';
+import cartComponent from './cart/cart.component';
 
 const module = angular.module('app.components', [])
   .component('login', login)
@@ -10,5 +11,6 @@ const module = angular.module('app.components', [])
   .component('catalogProducts', catalogProducts)
   .component('catalogItem', catalogItem)
   .component('categoriesNav', categoriesNav)
+  .component('cartComponent', cartComponent)
 
 export default module;

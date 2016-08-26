@@ -1,0 +1,17 @@
+<div class="panel">
+  <ul class="list-group">
+    <li ng-repeat="item in $ctrl.CartService.items track by $index">
+      <b>{{item.product.name}}</b>
+      <br>
+      <b>{{item.product.price}}</b>
+      <br>
+      <button  ng-click="$ctrl.CartService.remove(item.product.id)" class="btn btn-danger">remove</button>
+      <br>
+      <button ng-click="$ctrl.CartService.increment(item.product.id)" class="inc">+</button><br>
+      <button ng-click="$ctrl.CartService.decrement(item.product.id)" class="dec">-</button><br>
+      Count: {{item.amount}}<br>
+    </li>
+  </ul>
+  <div> {{$ctrl.CartService.sum}}</div>
+  <button ng-click="$ctrl.CartService.empty()">clear cart</button>
+</div>

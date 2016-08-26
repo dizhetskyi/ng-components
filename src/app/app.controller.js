@@ -1,15 +1,8 @@
 export default class AppController {
-  constructor(AuthService, CategoriesService, CartService){
+  constructor(AuthService, CategoriesService){
     "ngInject";
 
-    Object.assign(this, {AuthService, CategoriesService, CartService})
+    Object.assign(this, {AuthService, CategoriesService})
   }
 
-  get cartItems(){
-    return this.CartService.items;
-  }
-
-  removeFromCart(id){
-    this.CartService.remove(id);
-  }
 }

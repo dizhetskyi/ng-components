@@ -1,54 +1,65 @@
+const storageKey = 'cart';
+
 export default class CartService {
 
   items = [];
 
-  constructor(){
+  constructor() {
     "ngInject";
-
-    Object.assign(this, {});
 
     this.fetch();
   }
 
-  fetch(){
-    this.items = JSON.parse(localStorage.getItem('cart')) || [];
+  fetch() {
+    var data = localStorage.getItem(storageKey);
+    this.items = data === null ? [] : JSON.parse(data);
   }
 
-  save(){
-    localStorage.setItem('cart', JSON.stringify(this.items));
+  save() {
+    localStorage.setItem(storageKey, JSON.stringify(this.items));
   }
 
-  add(product){
-    this.items.push({product: angular.copy(product), amount: 1});
+  add(product, amount = 1) {
+    this.items.push({
+      product: angular.copy(product),
+      amount
+    });
 
+    this.save();
+  } 
+
+  remove(itId) {
+    this.items = this.items.filter((item) => item.product.id !== itId);
     this.save();
   }
 
-  remove(pId){
-    this.items = this.items.filter(p => p.product.id !== pId);
+  get sum() {
+    return this.items.reduce((sum, {product, amount}) => {
+      return sum + +product.price * amount; 
+    }, 0);
+  }
 
+  increment(itId) {
+    var targetItem = this.findItemByProductId(itId);
+    targetItem.amount++;
     this.save();
   }
 
-  inc(pId){
-    this.getItemById(pId).amount++;
+  decrement(itId) {
+    var targetItem = this.findItemByProductId(itId);
+    if(targetItem.amount > 1) {
+      targetItem.amount--;
+      this.save();
+    }
+  }
 
+  findItemByProductId(prodId) {
+    return this.items.find((item) => item.product.id === prodId);
+  }
+
+  empty() {
+    this.items = [];
     this.save();
-  }
-
-  dec(pId){
-    var item = this.getItemById(pId);
-    if (item.amount > 1) item.amount--;
-
-    this.save();
-  }
-
-  getItemById(pId){
-    return this.items.find(p => p.product.id === pId);
-  }
-
-  get total(){
-    return this.items.reduce((acc, curr) => acc + curr.product.price * curr.amount, 0)
   }
 
 }

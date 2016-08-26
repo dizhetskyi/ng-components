@@ -2,7 +2,6 @@
   <b>Name</b>: {{$ctrl.item.name}} <br>
   <b>Price</b>: {{$ctrl.item.price}} <br>
   <b>Category</b>: {{$ctrl.item.categoryId}} <br>
-  <br>
-  <a href="" ng-click="$ctrl.addToCart()" class="btn btn-success"><i class="fa fa-plus"></i> Add To Cart</a>
+  <button ng-click="$ctrl.add()" class="btn btn-sm">Add</button> <input type="number" ng-model="$ctrl.amount">
 </div>
 <br>
