@@ -42,6 +42,11 @@ const app = angular.module('app', [
         }
       })
 
+      .state('checkout', {
+        url: '/checkout',
+        component: 'checkout'
+      })
+
       .state('app.catalog.category.product', {
         url: "/{productId}",
         onEnter: ['$uibModal', '$state', '$stateParams', 

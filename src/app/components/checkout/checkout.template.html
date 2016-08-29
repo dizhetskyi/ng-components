@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div ng-if="$ctrl.CartService.items.length === 0 && !$ctrl.done">
+    <h2>Your cart is currently empty. <a ui-sref="app.home">Go shopping</a></h2>
+  </div>
+
+  <div ng-if="$ctrl.CartService.items.length > 0">
+    
+    <div class="row">
+      <div class="col-sm-8">
+        
+        <checkout-form on-done="$ctrl.onDone();" products="$ctrl.CartService.items"></checkout-form>
+
+      </div>
+      <div class="col-sm-4">
+
+        <h4>Cart items:</h4>
+        
+        <cart-item 
+          ng-repeat="item in $ctrl.CartService.items track by $index"
+          item="item"
+        ></cart-item>
+
+        <hr>
+
+        <h3>Total: {{$ctrl.CartService.total | currency}}</h3>
+
+      </div>  
+    </div>
+
+  </div>
+
+  <div ng-if="$ctrl.done">
+    <h2>Done!</h2>
+    <a ui-sref="app.home">Go home</a>
+  </div>
+
+</div>

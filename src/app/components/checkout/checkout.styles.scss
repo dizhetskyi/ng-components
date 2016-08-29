@@ -1,0 +1,28 @@
+.checkout {
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    background: #eee;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    top: 0;
+    z-index: -1;
+  }
+
+  .container {
+    padding: 0;
+  }
+}
+
+.checkout--form {
+  width: 60%;
+  float: left;
+}
+.checkout--cart-items {
+  width: 40%;
+  float: left;
+}

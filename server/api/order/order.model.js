@@ -19,7 +19,8 @@ var orderSchema = new Schema({
     default: statuses[0]
   },
   products: [],
-  user: String
+  user: Schema.Types.Mixed,
+  comment: String
 }, {
   collection: 'fs2_orders'
 });
